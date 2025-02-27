@@ -37,5 +37,5 @@ When('presses the "Login" button', async function (this: CustomWorld) {
 });
 
 Then('the admin dashboard must be shown', async function (this: CustomWorld) {
-    console.log("Hello world!");
+    console.log("Hello world!!");
 });
