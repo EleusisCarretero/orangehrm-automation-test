@@ -1,0 +1,27 @@
+{
+  "name": "orangehrm-automation-test",
+  "version": "1.0.0",
+  "description": "This project automates test for https://opensource-demo.orangehrmlive.com/web/index.php web site using plawright an Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EleusisCarretero/orangehrm-automation-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EleusisCarretero/orangehrm-automation-test/issues"
+  },
+  "homepage": "https://github.com/EleusisCarretero/orangehrm-automation-test#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
