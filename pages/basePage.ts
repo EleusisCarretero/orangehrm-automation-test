@@ -1,7 +1,7 @@
-import { Page } from "@playwright/test";
+import { expect, Locator, Page } from "@playwright/test";
 
 export class BasePage {
-    private page:Page;
+    protected page:Page;
     private __pagePath:string;
 
     constructor(page:Page, pagePath:string){
@@ -13,5 +13,23 @@ export class BasePage {
     }
     get getPagePath(){
         return this.__pagePath;
+    }
+    async fillTextBoxElement(writebleElement:Locator, inputText:string){
+        console.log(`Write ${inputText} into ${writebleElement.toString()}`);
+        try{
+            await writebleElement.fill(inputText);
+        }catch(error){
+            console.error(`Unable to write ${inputText} inside ${writebleElement.toString()} elemente: `, error);
+            throw new Error("The input data couln't be written");
+        }
+    }
+    async clickElement(clickableElement:Locator){
+        console.log(`Click on element ${clickableElement.toString()}`);
+        try{
+            await clickableElement.click();
+        }catch(error){
+            console.error(`Unable to performed a click on element ${clickableElement.toString()}:`, error);
+            throw new Error("Click was not performe");
+        }
     }
 }
