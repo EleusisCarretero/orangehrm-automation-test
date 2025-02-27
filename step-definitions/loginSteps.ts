@@ -16,21 +16,21 @@ Given('the user open the main web page OrangeHRM', async function (this: CustomW
 });
 
 When('enters the "Admin" in the "username" field', async function (this: CustomWorld) {
-    // await this.page.pause();
+    
     if (!this.logingPage) throw new Error("logingPage no está inicializado");
     await this.logingPage.writeUserName("Admin");
     
 });
 
 When('enters "admin123" in the "password" field', async function (this: CustomWorld) {
-    // await this.page.pause();
+    
     if (!this.logingPage) throw new Error("logingPage no está inicializado");
     await this.logingPage.writePassword("admin123");
     
 });
 
 When('presses the "Login" button', async function (this: CustomWorld) {
-    // await this.page.pause();
+    
     if (!this.logingPage) throw new Error("logingPage no está inicializado");
     await this.logingPage.clickOnLogin();
     
