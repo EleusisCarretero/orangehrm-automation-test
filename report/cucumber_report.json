@@ -1,0 +1,89 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "orangehrm-login;login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Login with valid credentials",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user open the main web page OrangeHRM",
+            "match": {
+              "location": "step-definitions/loginSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 405279575
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "enters the \"Admin\" in the \"username\" field",
+            "match": {
+              "location": "step-definitions/loginSteps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8666286
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "enters \"admin123\" in the \"password\" field",
+            "match": {
+              "location": "step-definitions/loginSteps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4668017
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "presses the \"Login\" button",
+            "match": {
+              "location": "step-definitions/loginSteps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2368680
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the admin dashboard must be shown",
+            "match": {
+              "location": "step-definitions/loginSteps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 343276
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "orangehrm-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "OrangeHRM Login",
+    "tags": [],
+    "uri": "features/login.feature"
+  }
+]

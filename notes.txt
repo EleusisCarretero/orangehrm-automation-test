@@ -1,0 +1,6 @@
+Run the browser running in graphic mode in linux
+    sudo apt update && sudo apt install xvfb -y
+
+Exeute graphic mode
+    xvfb-run -- npx cucumber-js features/login.feature
+

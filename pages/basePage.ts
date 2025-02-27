@@ -8,24 +8,32 @@ export class BasePage {
         this.page = page;
         this.__pagePath = pagePath;
     }
+
     async navigate() {
         await this.page.goto(this.getPagePath);
+        await this.page.waitForLoadState("networkidle");
     }
+
     get getPagePath(){
         return this.__pagePath;
     }
+
     async fillTextBoxElement(writebleElement:Locator, inputText:string){
         console.log(`Write ${inputText} into ${writebleElement.toString()}`);
         try{
+            await writebleElement.waitFor({state: "visible", timeout: 3000});
+            await writebleElement.click();
             await writebleElement.fill(inputText);
         }catch(error){
             console.error(`Unable to write ${inputText} inside ${writebleElement.toString()} elemente: `, error);
             throw new Error("The input data couln't be written");
         }
     }
+
     async clickElement(clickableElement:Locator){
         console.log(`Click on element ${clickableElement.toString()}`);
         try{
+            await clickableElement.waitFor({state: "visible"});
             await clickableElement.click();
         }catch(error){
             console.error(`Unable to performed a click on element ${clickableElement.toString()}:`, error);

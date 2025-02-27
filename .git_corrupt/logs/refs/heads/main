@@ -1,0 +1,7 @@
+0000000000000000000000000000000000000000 b40bc4a97df77d2586262bf406a6a5471c3c9bd9 Eleusis Carretero <eleusis.carrtero@gmail.com> 1740622814 -0600	clone: from https://github.com/EleusisCarretero/orangehrm-automation-test.git
+b40bc4a97df77d2586262bf406a6a5471c3c9bd9 07aba2a9ee4314d73625feccd4f576da80b9268a Eleusis Carretero <eleusis.carrtero@gmail.com> 1740624338 -0600	commit: first: include basic strucuture
+07aba2a9ee4314d73625feccd4f576da80b9268a 9d475eadf785b7de83b0ab67576a90acdcb9b84f Eleusis Carretero <eleusis.carrtero@gmail.com> 1740625532 -0600	commit: feat: feature for login defined
+9d475eadf785b7de83b0ab67576a90acdcb9b84f 06db58c9f3edcca9455712f947a410977f3fd076 Eleusis Carretero <eleusis.carrtero@gmail.com> 1740627247 -0600	commit: feat: create common methods
+06db58c9f3edcca9455712f947a410977f3fd076 1827aec4350a0b6d4288251244edd4c0d611d218 Eleusis Carretero <eleusis.carrtero@gmail.com> 1740627262 -0600	commit: feat: new class for login
+1827aec4350a0b6d4288251244edd4c0d611d218 a312b72090b8d6b4f259ea95fb7843579642b6b5 Eleusis Carretero <eleusis.carrtero@gmail.com> 1740627976 -0600	commit: feat: define folder to save common variable types
+a312b72090b8d6b4f259ea95fb7843579642b6b5 7f526029c6e8638e3ebdd2e957dd581b544144fb Eleusis Carretero <eleusis.carrtero@gmail.com> 1740627986 -0600	commit: defining method to login
