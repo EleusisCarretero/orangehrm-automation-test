@@ -21,7 +21,7 @@ export class BasePage {
     async fillTextBoxElement(writebleElement:Locator, inputText:string){
         console.log(`Write ${inputText} into ${writebleElement.toString()}`);
         try{
-            await writebleElement.waitFor({state: "visible", timeout: 3000});
+            await writebleElement.waitFor({state: "visible", timeout: 5000});
             await writebleElement.click();
             await writebleElement.fill(inputText);
         }catch(error){
