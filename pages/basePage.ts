@@ -26,7 +26,7 @@ export class BasePage {
             await writebleElement.fill(inputText);
         }catch(error){
             console.error(`Unable to write ${inputText} inside ${writebleElement.toString()} elemente: `, error);
-            throw new Error("The input data couln't be written");
+            throw new Error("The input data couln't be written ");
         }
     }
 
