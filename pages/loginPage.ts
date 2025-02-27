@@ -23,15 +23,15 @@ export class LoginPage extends BasePage {
     //     this.clickElement(this.loginButton);
     // }
     async writeUserName(userName:string){
-        this.fillTextBoxElement(this.userNameInput, userName);
+        await this.fillTextBoxElement(this.userNameInput, userName);
     }
 
     async writePassword(password:string){
-        this.fillTextBoxElement(this.passwordInput, password);
+        await this.fillTextBoxElement(this.passwordInput, password);
     }
 
     async clickOnLogin(){
-        this.clickElement(this.loginButton);
+        await this.clickElement(this.loginButton);
     }
 
 
