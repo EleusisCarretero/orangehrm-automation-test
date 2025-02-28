@@ -59,4 +59,9 @@ export default defineConfig({
     //   },
     // },
   ],
+  metadata: {
+    baseURL: "https://opensource-demo.orangehrmlive.com/web/index.php/",
+    loginURL: "auth/login",
+    dashboardURL: "dashboard/index",
+  }
 });

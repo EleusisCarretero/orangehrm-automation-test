@@ -11,18 +11,8 @@ export class BasePage {
 
     async navigate() {
         await this.page.goto(this.getPagePath);
-        // await this.page.waitForLoadState("networkidle");
+        
     }
-    // async navigate() {
-    //     if (!this.page || this.page.isClosed()) {
-    //         console.log("⚠️ No se puede navegar porque la página está cerrada.");
-    //         return;
-    //     }
-    //     await this.page.goto(this.url);
-    //     await this.page.waitForLoadState("domcontentloaded");
-    // }
-    
-    
 
     get getPagePath(){
         return this.__pagePath;

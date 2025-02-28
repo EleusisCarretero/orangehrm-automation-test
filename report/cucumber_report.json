@@ -15,11 +15,11 @@
             "line": 4,
             "name": "the user open the main web page OrangeHRM",
             "match": {
-              "location": "step-definitions/loginSteps.ts:10"
+              "location": "step-definitions/loginSteps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 415306779
+              "duration": 365215897
             }
           },
           {
@@ -28,11 +28,11 @@
             "line": 5,
             "name": "enters the \"Admin\" in the username field",
             "match": {
-              "location": "step-definitions/loginSteps.ts:18"
+              "location": "step-definitions/loginSteps.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 2902158425
+              "duration": 3065987981
             }
           },
           {
@@ -41,11 +41,11 @@
             "line": 6,
             "name": "enters \"admin123\" in the password field",
             "match": {
-              "location": "step-definitions/loginSteps.ts:25"
+              "location": "step-definitions/loginSteps.ts:32"
             },
             "result": {
               "status": "passed",
-              "duration": 94777466
+              "duration": 96404717
             }
           },
           {
@@ -54,11 +54,11 @@
             "line": 7,
             "name": "presses the \"Login\" button",
             "match": {
-              "location": "step-definitions/loginSteps.ts:32"
+              "location": "step-definitions/loginSteps.ts:39"
             },
             "result": {
               "status": "passed",
-              "duration": 766367917
+              "duration": 834303418
             }
           },
           {
@@ -67,11 +67,11 @@
             "line": 8,
             "name": "the admin dashboard must be shown",
             "match": {
-              "location": "step-definitions/loginSteps.ts:39"
+              "location": "step-definitions/loginSteps.ts:46"
             },
             "result": {
               "status": "passed",
-              "duration": 55255156
+              "duration": 30016775
             }
           },
           {
@@ -79,7 +79,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 170089234
+              "duration": 247159770
             }
           }
         ],
@@ -99,11 +99,11 @@
             "line": 15,
             "name": "the user open the main web page OrangeHRM",
             "match": {
-              "location": "step-definitions/loginSteps.ts:10"
+              "location": "step-definitions/loginSteps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 468351701
+              "duration": 422587371
             }
           },
           {
@@ -112,11 +112,11 @@
             "line": 16,
             "name": "enters the \"Pedrito\" in the username field",
             "match": {
-              "location": "step-definitions/loginSteps.ts:18"
+              "location": "step-definitions/loginSteps.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 2340597447
+              "duration": 2979386101
             }
           },
           {
@@ -125,11 +125,11 @@
             "line": 17,
             "name": "enters \"melectrocutaste\" in the password field",
             "match": {
-              "location": "step-definitions/loginSteps.ts:25"
+              "location": "step-definitions/loginSteps.ts:32"
             },
             "result": {
               "status": "passed",
-              "duration": 86109394
+              "duration": 59893527
             }
           },
           {
@@ -138,11 +138,11 @@
             "line": 18,
             "name": "presses the \"Login\" button",
             "match": {
-              "location": "step-definitions/loginSteps.ts:32"
+              "location": "step-definitions/loginSteps.ts:39"
             },
             "result": {
               "status": "passed",
-              "duration": 465418121
+              "duration": 590156624
             }
           },
           {
@@ -151,11 +151,11 @@
             "line": 19,
             "name": "the login must be denied",
             "match": {
-              "location": "step-definitions/loginSteps.ts:48"
+              "location": "step-definitions/loginSteps.ts:57"
             },
             "result": {
               "status": "passed",
-              "duration": 345350704
+              "duration": 362793078
             }
           },
           {
@@ -163,7 +163,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 173571066
+              "duration": 216766204
             }
           }
         ],
@@ -183,11 +183,11 @@
             "line": 15,
             "name": "the user open the main web page OrangeHRM",
             "match": {
-              "location": "step-definitions/loginSteps.ts:10"
+              "location": "step-definitions/loginSteps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 418501448
+              "duration": 441099577
             }
           },
           {
@@ -196,11 +196,11 @@
             "line": 16,
             "name": "enters the \"Erle93\" in the username field",
             "match": {
-              "location": "step-definitions/loginSteps.ts:18"
+              "location": "step-definitions/loginSteps.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 2349981343
+              "duration": 2892061443
             }
           },
           {
@@ -209,11 +209,11 @@
             "line": 17,
             "name": "enters \"pass3ed\" in the password field",
             "match": {
-              "location": "step-definitions/loginSteps.ts:25"
+              "location": "step-definitions/loginSteps.ts:32"
             },
             "result": {
               "status": "passed",
-              "duration": 80975566
+              "duration": 67723595
             }
           },
           {
@@ -222,11 +222,11 @@
             "line": 18,
             "name": "presses the \"Login\" button",
             "match": {
-              "location": "step-definitions/loginSteps.ts:32"
+              "location": "step-definitions/loginSteps.ts:39"
             },
             "result": {
               "status": "passed",
-              "duration": 433698479
+              "duration": 460241083
             }
           },
           {
@@ -235,11 +235,11 @@
             "line": 19,
             "name": "the login must be denied",
             "match": {
-              "location": "step-definitions/loginSteps.ts:48"
+              "location": "step-definitions/loginSteps.ts:57"
             },
             "result": {
               "status": "passed",
-              "duration": 346013066
+              "duration": 350393610
             }
           },
           {
@@ -247,7 +247,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 177646802
+              "duration": 181292157
             }
           }
         ],
@@ -267,11 +267,11 @@
             "line": 15,
             "name": "the user open the main web page OrangeHRM",
             "match": {
-              "location": "step-definitions/loginSteps.ts:10"
+              "location": "step-definitions/loginSteps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 486636824
+              "duration": 406915973
             }
           },
           {
@@ -280,11 +280,11 @@
             "line": 16,
             "name": "enters the \"Ztro\" in the username field",
             "match": {
-              "location": "step-definitions/loginSteps.ts:18"
+              "location": "step-definitions/loginSteps.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 2498571158
+              "duration": 2900741975
             }
           },
           {
@@ -293,11 +293,11 @@
             "line": 17,
             "name": "enters \"cont_123423\" in the password field",
             "match": {
-              "location": "step-definitions/loginSteps.ts:25"
+              "location": "step-definitions/loginSteps.ts:32"
             },
             "result": {
               "status": "passed",
-              "duration": 65118377
+              "duration": 66594311
             }
           },
           {
@@ -306,11 +306,11 @@
             "line": 18,
             "name": "presses the \"Login\" button",
             "match": {
-              "location": "step-definitions/loginSteps.ts:32"
+              "location": "step-definitions/loginSteps.ts:39"
             },
             "result": {
               "status": "passed",
-              "duration": 473867845
+              "duration": 436809994
             }
           },
           {
@@ -319,11 +319,11 @@
             "line": 19,
             "name": "the login must be denied",
             "match": {
-              "location": "step-definitions/loginSteps.ts:48"
+              "location": "step-definitions/loginSteps.ts:57"
             },
             "result": {
               "status": "passed",
-              "duration": 363493048
+              "duration": 351872324
             }
           },
           {
@@ -331,7 +331,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 217248669
+              "duration": 197727550
             }
           }
         ],

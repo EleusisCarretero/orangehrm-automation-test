@@ -4,13 +4,20 @@ import {Page} from "playwright"
 import {LoginPage} from "../pages/loginPage"
 import { CustomWorld } from "./worlds";
 import { chromium } from 'playwright';
+import test from "@playwright/test";
+import config from "../playwright.config";
 
 
 
 Given('the user open the main web page OrangeHRM', async function (this: CustomWorld) {
     this.browser = await chromium.launch({ headless: false });
     this.page = await this.browser.newPage();
-    this.logingPage = new LoginPage(this.page, "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+    const baseURL = config.metadata?.baseURL;
+    console.log("BASE URL: ", baseURL);
+    const loginURL = config.metadata?.loginURL;
+    console.log("LOGIN extension: ", loginURL);
+    console.log("URL: ", baseURL + loginURL);
+    this.logingPage = new LoginPage(this.page, baseURL + loginURL);
     this.logingPage.navigate();
     
 });
@@ -38,8 +45,10 @@ When('presses the "Login" button', async function (this: CustomWorld) {
 
 Then('the admin dashboard must be shown', async function (this: CustomWorld) {
     
+    const baseURL = config.metadata?.baseURL;
+    const dashboardURL = config.metadata?.dashboardURL;
     await this.page.waitForURL(
-        "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+        baseURL + dashboardURL,
         { timeout: 7000 });
 
 });
@@ -47,9 +56,11 @@ Then('the admin dashboard must be shown', async function (this: CustomWorld) {
 
 Then('the login must be denied', async function (this: CustomWorld) {
     
-    console.log("Invalid alert must be present")
+    console.log("Invalid alert must be present");
+    const baseURL = config.metadata?.baseURL;
+    const loginURL = config.metadata?.loginURL;
     await this.logingPage.isPresentInvalidAlert();
-    await this.page.waitForURL("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+    await this.page.waitForURL(baseURL + loginURL);
 
 });
 
