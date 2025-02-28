@@ -45,6 +45,15 @@ Then('the admin dashboard must be shown', async function (this: CustomWorld) {
 });
 
 
+Then('the login must be denied', async function (this: CustomWorld) {
+    
+    console.log("Invalid alert must be present")
+    await this.logingPage.isPresentInvalidAlert();
+    await this.page.waitForURL("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+
+});
+
+
 After(async function (this: CustomWorld) {
 
     if (this.page && !this.page.isClosed()) {
