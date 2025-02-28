@@ -6,6 +6,7 @@ export class LoginPage extends BasePage {
     private userNameInput:Locator;
     private passwordInput:Locator;
     private loginButton:Locator;
+    private invalidCredentialsAlert:Locator;
 
     constructor(page:Page, pagePath:string){
         super(page, pagePath);
@@ -13,15 +14,9 @@ export class LoginPage extends BasePage {
         this.userNameInput =  this.page.locator('[name="username"]');
         this.passwordInput =  this.page.locator('[name="password"]');
         this.loginButton =  this.page.locator('button[type="submit"]');
+        this.invalidCredentialsAlert = this.page.getByRole("alert");
     }
 
-    // async tryLogin(userCredentials:UserCredentials){
-    //     // fill user nada credentials
-    //     this.fillTextBoxElement(this.userNameInput, userCredentials.username);
-    //     this.fillTextBoxElement(this.passwordInput, userCredentials.password);
-    //     // click on loginButton
-    //     this.clickElement(this.loginButton);
-    // }
     async writeUserName(userName:string){
         await this.fillTextBoxElement(this.userNameInput, userName);
     }
@@ -32,6 +27,11 @@ export class LoginPage extends BasePage {
 
     async clickOnLogin(){
         await this.clickElement(this.loginButton);
+    }
+
+    async isPresentInvalidAlert(){
+        await this.invalidCredentialsAlert.waitFor({state:"visible", timeout: 2000 })
+        await this.invalidCredentialsAlert.click();
     }
 
 
