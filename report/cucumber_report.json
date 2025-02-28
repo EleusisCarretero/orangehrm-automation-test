@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 405119313
+              "duration": 439765589
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 31,
             "name": "the user open the main web page OrangeHRM",
             "match": {
-              "location": "step-definitions/loginSteps.ts:21"
+              "location": "step-definitions/loginSteps.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 2096708
+              "duration": 4198306
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 32,
             "name": "enters the \"Admin\" in the username field",
             "match": {
-              "location": "step-definitions/loginSteps.ts:31"
+              "location": "step-definitions/loginSteps.ts:32"
             },
             "result": {
               "status": "passed",
-              "duration": 3114132011
+              "duration": 2633871543
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 33,
             "name": "enters \"\" in the password field",
             "match": {
-              "location": "step-definitions/loginSteps.ts:38"
+              "location": "step-definitions/loginSteps.ts:39"
             },
             "result": {
               "status": "passed",
-              "duration": 141360047
+              "duration": 61808810
             }
           },
           {
@@ -62,11 +62,11 @@
             "line": 34,
             "name": "presses the \"Login\" button",
             "match": {
-              "location": "step-definitions/loginSteps.ts:45"
+              "location": "step-definitions/loginSteps.ts:46"
             },
             "result": {
               "status": "passed",
-              "duration": 37112845
+              "duration": 57667839
             }
           },
           {
@@ -75,11 +75,11 @@
             "line": 35,
             "name": "the crdentials must be asked",
             "match": {
-              "location": "step-definitions/loginSteps.ts:71"
+              "location": "step-definitions/loginSteps.ts:72"
             },
             "result": {
               "status": "passed",
-              "duration": 139640987
+              "duration": 169476865
             }
           },
           {
@@ -87,7 +87,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 188345499
+              "duration": 130532427
             }
           }
         ],

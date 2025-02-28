@@ -6,6 +6,8 @@ import { CustomWorld } from "./worlds";
 import { chromium } from 'playwright';
 import {test, expect} from "@playwright/test";
 import config from "../playwright.config";
+import { ResultManager } from "../utils/assertions";
+import { TestLoginActions } from "../test-common-actions/TestLogInActions";
 
 
 Before(async function (this: CustomWorld){
@@ -15,12 +17,15 @@ Before(async function (this: CustomWorld){
     const loginURL = config.metadata?.baseURL + config.metadata?.loginURL;
     console.log("Login URL: ", loginURL);
     this.logingPage = new LoginPage(this.page, loginURL);
+    let result = new ResultManager("loginResult");
+    this.testLoginActions = new TestLoginActions(this.logingPage,result);
 
 });
 
 Given('the user open the main web page OrangeHRM', async function (this: CustomWorld) {
     
-    this.logingPage.navigate();
+    // await this.logingPage.navigate();
+    await this.testLoginActions.stepOpenLoginPage();
     
 });
 
