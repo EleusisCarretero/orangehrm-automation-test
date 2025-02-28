@@ -1,5 +1,5 @@
 import { format } from "path";
-import {Given, When, Then, After} from "@cucumber/cucumber"
+import {Given, When, Then, After, Before} from "@cucumber/cucumber"
 import {Page} from "playwright"
 import {LoginPage, credentialsRequiresMsgs} from "../pages/loginPage"
 import { CustomWorld } from "./worlds";
@@ -8,13 +8,22 @@ import {test, expect} from "@playwright/test";
 import config from "../playwright.config";
 
 
-
-Given('the user open the main web page OrangeHRM', async function (this: CustomWorld) {
+Before(async function (this: CustomWorld){
+    console.log("Execution before")
     this.browser = await chromium.launch({ headless: false });
     this.page = await this.browser.newPage();
     const loginURL = config.metadata?.baseURL + config.metadata?.loginURL;
     console.log("Login URL: ", loginURL);
     this.logingPage = new LoginPage(this.page, loginURL);
+
+});
+
+Given('the user open the main web page OrangeHRM', async function (this: CustomWorld) {
+    // this.browser = await chromium.launch({ headless: false });
+    // this.page = await this.browser.newPage();
+    // const loginURL = config.metadata?.baseURL + config.metadata?.loginURL;
+    // console.log("Login URL: ", loginURL);
+    // this.logingPage = new LoginPage(this.page, loginURL);
     this.logingPage.navigate();
     
 });
