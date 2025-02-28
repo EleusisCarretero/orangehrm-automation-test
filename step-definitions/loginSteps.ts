@@ -19,11 +19,7 @@ Before(async function (this: CustomWorld){
 });
 
 Given('the user open the main web page OrangeHRM', async function (this: CustomWorld) {
-    // this.browser = await chromium.launch({ headless: false });
-    // this.page = await this.browser.newPage();
-    // const loginURL = config.metadata?.baseURL + config.metadata?.loginURL;
-    // console.log("Login URL: ", loginURL);
-    // this.logingPage = new LoginPage(this.page, loginURL);
+    
     this.logingPage.navigate();
     
 });
