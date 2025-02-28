@@ -4,74 +4,74 @@
     "elements": [
       {
         "description": "",
-        "id": "orangehrm-login;login-with-valid-credentials",
+        "id": "orangehrm-login;login-empty-credentials",
         "keyword": "Scenario",
-        "line": 12,
-        "name": "Login with valid credentials",
+        "line": 39,
+        "name": "Login empty credentials",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
+            "line": 31,
             "name": "the user open the main web page OrangeHRM",
             "match": {
               "location": "step-definitions/loginSteps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 365215897
+              "duration": 403742248
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 5,
+            "line": 32,
             "name": "enters the \"Admin\" in the username field",
             "match": {
-              "location": "step-definitions/loginSteps.ts:25"
+              "location": "step-definitions/loginSteps.ts:22"
             },
             "result": {
               "status": "passed",
-              "duration": 3065987981
+              "duration": 2919559298
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 6,
-            "name": "enters \"admin123\" in the password field",
+            "line": 33,
+            "name": "enters \"\" in the password field",
             "match": {
-              "location": "step-definitions/loginSteps.ts:32"
+              "location": "step-definitions/loginSteps.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 96404717
+              "duration": 59270790
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 7,
+            "line": 34,
             "name": "presses the \"Login\" button",
             "match": {
-              "location": "step-definitions/loginSteps.ts:39"
+              "location": "step-definitions/loginSteps.ts:36"
             },
             "result": {
               "status": "passed",
-              "duration": 834303418
+              "duration": 63838800
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 8,
-            "name": "the admin dashboard must be shown",
+            "line": 35,
+            "name": "the crdentials must be asked",
             "match": {
-              "location": "step-definitions/loginSteps.ts:46"
+              "location": "step-definitions/loginSteps.ts:62"
             },
             "result": {
               "status": "passed",
-              "duration": 30016775
+              "duration": 176950012
             }
           },
           {
@@ -79,263 +79,16 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 247159770
+              "duration": 168642872
             }
           }
         ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "orangehrm-login;login-with-invalid-credentials",
-        "keyword": "Scenario",
-        "line": 23,
-        "name": "Login with invalid credentials",
-        "steps": [
+        "tags": [
           {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 15,
-            "name": "the user open the main web page OrangeHRM",
-            "match": {
-              "location": "step-definitions/loginSteps.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 422587371
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 16,
-            "name": "enters the \"Pedrito\" in the username field",
-            "match": {
-              "location": "step-definitions/loginSteps.ts:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2979386101
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "enters \"melectrocutaste\" in the password field",
-            "match": {
-              "location": "step-definitions/loginSteps.ts:32"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 59893527
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 18,
-            "name": "presses the \"Login\" button",
-            "match": {
-              "location": "step-definitions/loginSteps.ts:39"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 590156624
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "the login must be denied",
-            "match": {
-              "location": "step-definitions/loginSteps.ts:57"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 362793078
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 216766204
-            }
+            "name": "@test3",
+            "line": 29
           }
         ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "orangehrm-login;login-with-invalid-credentials",
-        "keyword": "Scenario",
-        "line": 24,
-        "name": "Login with invalid credentials",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 15,
-            "name": "the user open the main web page OrangeHRM",
-            "match": {
-              "location": "step-definitions/loginSteps.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 441099577
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 16,
-            "name": "enters the \"Erle93\" in the username field",
-            "match": {
-              "location": "step-definitions/loginSteps.ts:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2892061443
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "enters \"pass3ed\" in the password field",
-            "match": {
-              "location": "step-definitions/loginSteps.ts:32"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 67723595
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 18,
-            "name": "presses the \"Login\" button",
-            "match": {
-              "location": "step-definitions/loginSteps.ts:39"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 460241083
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "the login must be denied",
-            "match": {
-              "location": "step-definitions/loginSteps.ts:57"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 350393610
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 181292157
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "orangehrm-login;login-with-invalid-credentials",
-        "keyword": "Scenario",
-        "line": 25,
-        "name": "Login with invalid credentials",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 15,
-            "name": "the user open the main web page OrangeHRM",
-            "match": {
-              "location": "step-definitions/loginSteps.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 406915973
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 16,
-            "name": "enters the \"Ztro\" in the username field",
-            "match": {
-              "location": "step-definitions/loginSteps.ts:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2900741975
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "enters \"cont_123423\" in the password field",
-            "match": {
-              "location": "step-definitions/loginSteps.ts:32"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 66594311
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 18,
-            "name": "presses the \"Login\" button",
-            "match": {
-              "location": "step-definitions/loginSteps.ts:39"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 436809994
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "the login must be denied",
-            "match": {
-              "location": "step-definitions/loginSteps.ts:57"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 351872324
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 197727550
-            }
-          }
-        ],
-        "tags": [],
         "type": "scenario"
       }
     ],
