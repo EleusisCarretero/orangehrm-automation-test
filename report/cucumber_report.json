@@ -6,7 +6,7 @@
         "description": "",
         "id": "orangehrm-login;login-with-valid-credentials",
         "keyword": "Scenario",
-        "line": 3,
+        "line": 12,
         "name": "Login with valid credentials",
         "steps": [
           {
@@ -19,33 +19,33 @@
             },
             "result": {
               "status": "passed",
-              "duration": 409630670
+              "duration": 475686353
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 5,
-            "name": "enters the \"Admin\" in the \"username\" field",
+            "name": "enters the \"Admin\" in the username field",
             "match": {
               "location": "step-definitions/loginSteps.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 2380113836
+              "duration": 3382778882
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 6,
-            "name": "enters \"admin123\" in the \"password\" field",
+            "name": "enters \"admin123\" in the password field",
             "match": {
               "location": "step-definitions/loginSteps.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 53565440
+              "duration": 138472072
             }
           },
           {
@@ -58,7 +58,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 843255409
+              "duration": 821595043
             }
           },
           {
@@ -71,7 +71,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 62656753
+              "duration": 43799547
             }
           },
           {
@@ -79,7 +79,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 173755917
+              "duration": 276877333
             }
           }
         ],
