@@ -37,5 +37,31 @@ When('presses the "Login" button', async function (this: CustomWorld) {
 });
 
 Then('the admin dashboard must be shown', async function (this: CustomWorld) {
-    console.log("Hello world!!");
+    
+    await this.page.waitForURL(
+        "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+        { timeout: 7000 });
+
 });
+
+
+After(async function (this: CustomWorld) {
+
+    if (this.page && !this.page.isClosed()) {
+        console.log("Close page");
+        await this.page.close();
+    } else {
+        console.log("The page is already closed");
+    }
+
+    if (this.browser) {
+        console.log("Closing browser");
+        await this.browser.close();
+    }
+
+    console.log("Browser closed");
+});
+
+
+
+
