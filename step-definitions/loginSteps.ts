@@ -8,6 +8,7 @@ import {test, expect} from "@playwright/test";
 import config from "../playwright.config";
 import { ResultManager } from "../utils/assertions";
 import { TestLoginActions } from "../test-common-actions/TestLogInActions";
+import { UserCredentialData } from "../types/userCredentials";
 
 
 Before(async function (this: CustomWorld){
@@ -31,22 +32,36 @@ Given('the user open the main web page OrangeHRM', async function (this: CustomW
 
 When('enters the {string} in the username field', async function (this: CustomWorld, userName:string) {
     
-    if (!this.logingPage) throw new Error("logingPage no está inicializado");
-    await this.logingPage.writeUserName(userName);
+    // if (!this.logingPage) throw new Error("logingPage no está inicializado");
+    // await this.logingPage.writeUserName(userName);
+    const userCredentialdata = {
+        writeCallback:"writeUserName",
+        readCallback:"getUsernameContent",
+        userData:userName
+    } as UserCredentialData;
+    await this.testLoginActions.stepWriteUserCredentials(userCredentialdata);
     
 });
 
 When('enters {string} in the password field', async function (this: CustomWorld, password:string) {
     
-    if (!this.logingPage) throw new Error("logingPage no está inicializado");
-    await this.logingPage.writePassword(password);
+    // if (!this.logingPage) throw new Error("logingPage no está inicializado");
+    // await this.logingPage.writePassword(password);
+    const userCredentialdata = {
+        writeCallback:"writePassword",
+        readCallback:"getPassword",
+        userData:password
+    } as UserCredentialData;
+    await this.testLoginActions.stepWriteUserCredentials(userCredentialdata);
     
 });
 
 When('presses the "Login" button', async function (this: CustomWorld) {
     
-    if (!this.logingPage) throw new Error("logingPage no está inicializado");
-    await this.logingPage.clickOnLogin();
+    // if (!this.logingPage) throw new Error("logingPage no está inicializado");
+    // await this.logingPage.clickOnLogin();
+    await this.page.pause();
+    await this.testLoginActions.loginPage.clickOnLogin();
     
 });
 

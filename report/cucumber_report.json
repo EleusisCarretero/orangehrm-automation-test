@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 439765589
+              "duration": 434917842
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 31,
             "name": "the user open the main web page OrangeHRM",
             "match": {
-              "location": "step-definitions/loginSteps.ts:25"
+              "location": "step-definitions/loginSteps.ts:26"
             },
             "result": {
               "status": "passed",
-              "duration": 4198306
+              "duration": 5695908
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 32,
             "name": "enters the \"Admin\" in the username field",
             "match": {
-              "location": "step-definitions/loginSteps.ts:32"
+              "location": "step-definitions/loginSteps.ts:33"
             },
             "result": {
               "status": "passed",
-              "duration": 2633871543
+              "duration": 4773973
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 33,
             "name": "enters \"\" in the password field",
             "match": {
-              "location": "step-definitions/loginSteps.ts:39"
+              "location": "step-definitions/loginSteps.ts:46"
             },
             "result": {
               "status": "passed",
-              "duration": 61808810
+              "duration": 1374351
             }
           },
           {
@@ -62,11 +62,12 @@
             "line": 34,
             "name": "presses the \"Login\" button",
             "match": {
-              "location": "step-definitions/loginSteps.ts:46"
+              "location": "step-definitions/loginSteps.ts:59"
             },
             "result": {
-              "status": "passed",
-              "duration": 57667839
+              "status": "failed",
+              "duration": 10777898,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'fillTextBoxElement')\n    at writeUserName (/home/eleusis/Documents/remote_repos/orangehrm-automation-test/pages/loginPage.ts:30:20)\n    at /home/eleusis/Documents/remote_repos/orangehrm-automation-test/test-common-actions/TestLogInActions.ts:34:23\n    at ResultManager.checkNoErrors (/home/eleusis/Documents/remote_repos/orangehrm-automation-test/utils/assertions.ts:37:13)\n    at TestLoginActions.stepWriteUserCredentials (/home/eleusis/Documents/remote_repos/orangehrm-automation-test/test-common-actions/TestLogInActions.ts:32:21)\n    at World.<anonymous> (/home/eleusis/Documents/remote_repos/orangehrm-automation-test/step-definitions/loginSteps.ts:42:33)"
             }
           },
           {
@@ -75,19 +76,20 @@
             "line": 35,
             "name": "the crdentials must be asked",
             "match": {
-              "location": "step-definitions/loginSteps.ts:72"
+              "location": "step-definitions/loginSteps.ts:87"
             },
             "result": {
-              "status": "passed",
-              "duration": 169476865
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "passed",
-              "duration": 130532427
+              "status": "failed",
+              "duration": 83477232,
+              "error_message": "page.goto: net::ERR_ABORTED; maybe frame was detached?\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.navigate (/home/eleusis/Documents/remote_repos/orangehrm-automation-test/pages/basePage.ts:13:25)\n    at /home/eleusis/Documents/remote_repos/orangehrm-automation-test/test-common-actions/TestLogInActions.ts:21:38\n    at ResultManager.checkNoErrors (/home/eleusis/Documents/remote_repos/orangehrm-automation-test/utils/assertions.ts:37:13)\n    at TestLoginActions.stepOpenLoginPage (/home/eleusis/Documents/remote_repos/orangehrm-automation-test/test-common-actions/TestLogInActions.ts:19:21)\n    at World.<anonymous> (/home/eleusis/Documents/remote_repos/orangehrm-automation-test/step-definitions/loginSteps.ts:29:33)"
             }
           }
         ],

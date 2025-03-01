@@ -52,12 +52,22 @@ export class LoginPage extends BasePage {
         return  reqMsg === "";
     }
 
+    async getUsernameContent() {
+        await this.userNameInput.click();
+        return await this.userNameInput.inputValue();
+    }
+
     async isPasswordEmpty(){
         await this.passwordInput.click();
         let reqMsg = await this.passwordInput.inputValue();
         console.log("Message: ", reqMsg);
         // await this.page.pause();
         return  reqMsg === "";
+    }
+
+    async getPassword() {
+        await this.passwordInput.click();
+        return await this.passwordInput.inputValue();
     }
 
     async credentialsRequiredMsg(userCredential:credentialsRequiresMsgs){
