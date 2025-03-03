@@ -16,28 +16,32 @@ export class TestLoginActions extends TestCommonActions{
     }
 
     async stepOpenLoginPage(){
-        this.result.checkNoErrors(
+        await this.result.checkNoErrors(
             async() =>{
                 await this.loginPage.navigate();
             },
             "Check the Login page can be opened successfully"
         )
     }
+
     async stepWriteUserCredentials(userCredentialdata:UserCredentialData){
         //1. Write the user credentials succesfully
         const { writeCallback, readCallback, userData} = userCredentialdata;
     
-        const writeCredential = this.loginPage[writeCallback as keyof LoginPage] as (data: string) => Promise<void>;
-        const readCredential = this.loginPage[readCallback as keyof LoginPage] as () => Promise<string>;
-        this.result.checkNoErrors(
+        const writeCredential = (this.loginPage[writeCallback as keyof LoginPage] as (data: string) => Promise<void>).bind(this.loginPage);
+        const readCredential = (this.loginPage[readCallback as keyof LoginPage] as () => Promise<string>).bind(this.loginPage);
+        await this.result.checkNoErrors(
             async()=>{
                 await writeCredential(userData);
             },
            `Check can be witten the user credential ${userData}`
         )
         // 2. Confirm that the user credential has been writtem
+        await this.loginPage.page.waitForTimeout(500);
+        let currentCredential = await readCredential();
+        console.log(`DEBUG: Valor leído del input: "${currentCredential}"`);
         this.result.checkEqualsTo(
-            readCredential,
+            currentCredential, 
             userData,
             `Check the value from the corresponding user credential is the one previously written ${userData}`
         )

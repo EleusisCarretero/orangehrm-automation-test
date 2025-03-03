@@ -8,7 +8,7 @@ export default defineConfig({
     ignoreHTTPSErrors: true,
   },
   reporter: [['list'], ['html', { outputFolder: 'test-results' }]],
-  timeout: 60000,
+  timeout: 10000,
   projects: [
     {
       name: 'chromium',

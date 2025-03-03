@@ -1,7 +1,7 @@
 import { expect, Locator, Page } from "@playwright/test";
 
 export class BasePage {
-    protected page:Page;
+    public page:Page;
     private __pagePath:string;
 
     constructor(page:Page, pagePath:string){

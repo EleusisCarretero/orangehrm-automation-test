@@ -32,9 +32,9 @@ export class ResultManager {
         }
     }
 
-    checkNoErrors(callbackMethod:CallableFunction,  stepMsg:string){
+    async checkNoErrors(callbackMethod:CallableFunction,  stepMsg:string){
         try{
-            callbackMethod();
+            await callbackMethod();
             this._logResult(true, `PASSED, Assert is Executed correclty - ${stepMsg}`);
         }catch(error){
             this._logResult(false, `Failed, Assert NOT Executed correclty - ${stepMsg}`);

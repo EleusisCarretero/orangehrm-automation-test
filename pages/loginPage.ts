@@ -53,8 +53,13 @@ export class LoginPage extends BasePage {
     }
 
     async getUsernameContent() {
-        await this.userNameInput.click();
-        return await this.userNameInput.inputValue();
+        await this.page.waitForSelector('[name="username"]', { state: 'visible', timeout: 20000 });
+        console.log("Waiting for username input to be visible...");
+        await this.userNameInput.waitFor({ state: 'visible', timeout: 10000 });
+        console.log("Username input is visible. Filling the field...");
+        const value = await this.userNameInput.inputValue();
+        console.log("Username field filled successfully.");
+        return value;
     }
 
     async isPasswordEmpty(){

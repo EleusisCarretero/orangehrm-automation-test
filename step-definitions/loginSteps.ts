@@ -27,6 +27,8 @@ Given('the user open the main web page OrangeHRM', async function (this: CustomW
     
     // await this.logingPage.navigate();
     await this.testLoginActions.stepOpenLoginPage();
+    // await this.testLoginActions.loginPage.navigate();
+    console.log("Until open url")
     
 });
 
@@ -120,17 +122,17 @@ Then('the crdentials must be asked', async function (this: CustomWorld) {
 
 After(async function (this: CustomWorld) {
 
-    if (this.page && !this.page.isClosed()) {
-        console.log("Closing page");
-        await this.page.close();
-    } else {
-        console.log("The page is already closed");
-    }
+    // if (this.page && !this.page.isClosed()) {
+    //     console.log("Closing page");
+    //     await this.page.close();
+    // } else {
+    //     console.log("The page is already closed");
+    // }
 
-    if (this.browser) {
-        console.log("Closing browser");
-        await this.browser.close();
-    }
+    // if (this.browser) {
+    //     console.log("Closing browser");
+    //     await this.browser.close();
+    // }
 
     console.log("Browser closed");
 });
